@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('code')->unique();
             $table->string('name')->nullable();
             $table->double('price',2)->nullable();
+            $table->integer('stock')->default(0);
             $table->bigInteger('id_category')->unsigned();
             $table->timestamps();
             $table->foreign('id_category')->references('id')->on('categories')->onDelete('cascade');
