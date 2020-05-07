@@ -15,15 +15,16 @@ class CreateProductDetailsTable extends Migration
     {
         Schema::create('product_details', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('pieces');
-            $table->string('measure')->nullable();
-            $table->double('weight',2)->nullable();
-            $table->string('material')->nullable();
-            $table->string('color')->nullable();
-            $table->string('description')->nullable();
-            $table->bigInteger('id_product')->unsigned();
+            $table->unsignedBigInteger('products_id');
+            $table->foreign('products_id')->references('id')->on('products');
+            $table->integer('number_of_pieces');
+            $table->text('measurements');
+            $table->decimal('weight', 3, 2);
+            $table->string('material', 100);
+            $table->string('colors', 100);
+            $table->string('desing', 100);
+            $table->text('description');
             $table->timestamps();
-            $table->foreign('id_product')->references('id')->on('products')->onDelete('cascade');
         });
     }
 
