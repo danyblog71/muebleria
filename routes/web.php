@@ -21,3 +21,8 @@ Route::get('category/insert', 'categoryController@store');
 Route::get('category/get/{id}', 'categoryController@show');
 Route::get('category/update/{id}', 'categoryController@update');
 Route::get('category/delete/{id}', 'categoryController@destroy');
+
+Route::get('product/insert', 'productController@store');
+Route::get('product/get/{id}', 'productController@show');
+Route::get('product/update/{id}', 'productController@update');
+Route::get('product/delete/{id}', 'productController@destroy');
