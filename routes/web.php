@@ -27,3 +27,6 @@ Route::get('product/insert', 'productController@store');
 Route::get('product/get/{id}', 'productController@show');
 Route::get('product/update/{id}', 'productController@update');
 Route::get('product/delete/{id}', 'productController@destroy');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
