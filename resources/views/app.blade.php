@@ -4,8 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{asset('assets/css/scrolling-nav.css')}}">
+        <link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
         <title>@yield('page-title') - Muebleria</title>
         @yield('page-css')
     </head>
@@ -19,14 +19,7 @@
             </div>
         </div>
         @yield('script')
-        <script src="{{asset('assets/vendor/jquery/jquery.min.js')}}"></script>
-        <script src="{{asset('assets/vendor/popper/popper.min.js')}}"></script>
-        <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.min.js')}}"></script>
-
-        <!-- Plugin JavaScript -->
-        <script src="{{asset('assets/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
-
-        <!-- Custom JavaScript for this theme -->
-        <script src="{{asset('assets/js/scrolling-nav.js')}}"></script>
+        <script src="{{asset('assets/jquery/jquery.min.js')}}"></script>
+        <script src="{{asset('assets/bootstrap/js/bootstrap.min.js')}}"></script>
     </body>
 </html>

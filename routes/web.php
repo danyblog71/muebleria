@@ -12,9 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use App\Category;
 Route::get('/', function () {
-    return view('index');
+    $categories = Category::all();
+    return view('index', compact('categories'));
 });
 
 Route::get('category/insert', 'categoryController@store');

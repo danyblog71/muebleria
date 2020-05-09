@@ -16,13 +16,13 @@
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div align="center" class="carousel-item active">
-        <img src="{{asset('assets/img/carrusel-1.jpg')}}" width="800" height="600" alt="Los Angeles">
+        <img src="{{asset('assets/img/carrusel-1.jpg')}}">
       </div>
       <div align="center" class="carousel-item">
-        <img src="{{asset('assets/img/carrusel-2.jpg')}}" width="800" height="600" alt="Chicago">
+        <img src="{{asset('assets/img/carrusel-2.jpg')}}">
       </div>
       <div align="center" class="carousel-item">
-        <img src="{{asset('assets/img/carrusel-3.jpg')}}" width="800" height="600" alt="New York">
+        <img src="{{asset('assets/img/carrusel-3.jpg')}}">
       </div>
     </div>
   
@@ -35,7 +35,7 @@
     </a>
 </div>
 
-<section id="about">
+<section id="destacados">
   <div class="container">
       <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -87,3 +87,5 @@
 </section>
 
 @stop
+
+@section('')
